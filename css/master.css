@@ -1,6 +1,6 @@
 /* Start Variables */
 :root {
-    --main-color: #0075ff;
+    --main-color: #0059be;
     --secondary-color: #ff6a00;
     --confirm-color: #28a745;
     --back-color: #f1f5f9;
@@ -92,22 +92,33 @@ nav ul li a {
 
 
 .landing {
-    padding: 100px 0;
+    padding: 70px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 .landing h2 {
-    font-size: 50px;
+    font-size: 70px;
     color: var(--main-color);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-family: 'Edu NSW ACT Cursive', Courier, monospace;
 }
 .landing p {
     font-size: 20px;
     color: #555;
     max-width: 600px;
     margin-bottom: 30px;
+}
+.login {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;
+    background-color: var(--back-color);
 }
 .login form{
     display: flex;

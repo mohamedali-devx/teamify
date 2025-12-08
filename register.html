@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teamify - Register</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Register a new account on Teamify to start forming balanced teams for university projects.">
+        <meta name="keywords" content="Teamify, University, Teams, Projects, Students, Register">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/register.css">
+        <!-- Framework CSS File -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@603&family=Glass+Antiqua&family=Norican&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start Header -->
+        <header>
+            <div class="container">
+                <nav>
+                    <ul class="d-flex align-center">
+                        <li><a href="about.html">AboutUs</a></li>
+                        <li>
+                            <a href="index.html" class="logo ">
+                                <img src="media/images/logo.png" alt="Teamify Logo">
+                            </a>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Register Section -->
+        <div class="register-section">
+            <div class="container">
+                <h2>Create a New Account</h2>
+                <form action="" method="POST">
+                    <div class="info">
+                        <input type="text" name="fullname" placeholder="Full Name" required>
+                        <input type="text" name="student_id" placeholder="Student ID" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="gender">
+                        <label>
+                            <input type="radio" name="gender" value="male" required>
+                            <span>Male</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            <span>Female</span>
+                        </label>
+                    </div>
+                    <div class="year">
+                        <input type="range" name="year" min="1" max="4" value="1" step="1" oninput="this.nextElementSibling.value = this.value">
+                        <output>1</output> <p>Year</p>
+                    </div>
+                    <div class="headline">
+                        <label for="headline">Headline</label>
+                        <textarea name="headline" placeholder="I am a dedicated student passionate about collaborative projects.I know some front-end development."></textarea>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+        <!-- End Register Section -->
+        <!-- Start Footer -->
+        <footer>
+            <p class="copyright">
+                Made With Love By Teamify © 2025 
+            </p>
+            <div class="social">
+                <a target="_blank" href="https://youtube.com/@mony7859?si=ritKdiTrvNmpd9ij">
+                Youtube
+                </a>
+                <a target="_blank" href="https://www.instagram.com/mohamedali.dev">
+                Instagram
+                </a>
+                <a target="_blank" href="https://github.com/mohamedali-devx">
+                Github
+                </a>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </body>
+</html>

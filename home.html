@@ -11,6 +11,8 @@
         <!-- Font Awesome Library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Main Template CSS File -->
         <link rel="stylesheet" href="css/home.css">
         <!-- Framework CSS File -->
         <link rel="stylesheet" href="css/framework.css">
@@ -22,7 +24,6 @@
     <body>
         <!-- Start Header -->
         <header>
-            <div class="container">
                 <nav>
                     <ul class="d-flex align-center">
                         <li>
@@ -30,9 +31,16 @@
                                 <img src="media/images/logo.png" alt="Teamify Logo">
                             </a>
                         </li>
+                        <li>
+                        <section class="search">
+                            <form id="teamSearchForm">
+                                <input type="text" id="searchInput" placeholder="Search by team name or project" required>
+                                <button type="submit">Search</button>
+                            </form>
+                        </section>
+                        </li>
                     </ul>
                 </nav>
-            </div>
         </header>
         <!-- End Header -->
         <!-- Start Home Content -->

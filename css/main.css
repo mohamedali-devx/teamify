@@ -1,0 +1,117 @@
+/* Start Variables */
+:root {
+    --main-color: #0056D2;
+    --secondary-color: #e3efff;
+    --confirm-color: #28a745;
+    --back-color: #ffffff;
+    --border-color: #ccc;
+    --font-color: black;
+    --transparent-color: rgb(15 116 143 / 70%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    min-height: 90px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.page {
+    min-height: 100vh;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Mediam */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* body */
+body {
+    background-color: var(--back-color);
+    color: var(--font-color);
+}
+/* header */
+header {
+    height: 70px;
+    background-color: var(--back-color);
+    border-bottom: 1px solid var(--border-color);
+}
+nav ul {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.logo {
+    position: relative;
+    top: 20px;
+}
+.logo img {
+    width: 100px;
+}
+header a,
+header a:visited {
+    color: var(--font-color);
+    font-weight: 100;
+}
+/* footer */
+footer {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer div {
+    font-size: 16px;
+}
+footer a {
+    color: var(--font-color);
+}

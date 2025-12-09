@@ -1,0 +1,238 @@
+/* Start Variables */
+:root {
+    --main-color: #0059be;
+    --secondary-color: #ff6a00;
+    --confirm-color: #28a745;
+    --back-color: #f1f5f9;
+    --transparent-color: rgb(15 116 143 / 70%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    min-height: 90px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.page {
+    min-height: 100vh;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Mediam */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+
+
+body {
+    background-color: var(--back-color);
+}
+
+
+header {
+    height: 70px;
+    background-color: var(--main-color);
+}
+nav ul {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: var(--back-color);
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.logo {
+    position: relative;
+    top: 20px;
+}
+.logo img {
+    width: 100px;
+}
+.main-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 30px;
+}
+.messages {
+    flex: 0 0 calc(50% - 0px);
+}
+.teams {
+    flex: 0 0 calc(50% - 0px);
+}
+
+
+
+.info {
+    width: 600px;
+    height: 100px;
+    background-color: var(--back-color);
+    height: 350px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;
+}
+.info .banner img {
+    width: 600px;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+.info .profile-image img{
+    background-color: var(--back-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 27%;
+    left: 11%;
+    transform: translateX(-50%);
+    border: 5px solid var(--back-color);
+}
+.info h2 {
+    margin-top: 50px;
+}
+
+
+.messages {
+    /*background-color: green;
+        border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;*/
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+
+}
+.messages .users {
+    margin-left: 200px;
+    background-color: var(--back-color);
+    width: 250px;
+    height: 350px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;
+}
+.chat {
+    background-color: var(--back-color);
+    width: 350px;
+    height: 350px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0 0 5px 0.1px gray;
+}
+.messages .users .user {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.messages .users .user i {
+    font-size: 24px;
+    color: var(--main-color);
+}
+.messages .users .user img {
+    background-color: var(--back-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+.team-list {
+    background-color: var(--back-color);
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;
+
+    width: 600px;
+    height: 300px;
+}
+.team {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.search {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search button {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--back-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+.create-team {
+    margin-top: 20px;
+}
+.create-team a {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--confirm-color);
+    color: var(--back-color);
+    font-size: 18px;
+    cursor: pointer;
+}

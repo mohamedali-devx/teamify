@@ -1,0 +1,407 @@
+/* Start Variables */
+:root {
+    --main-color: #0056D2;
+    --secondary-color: #e3efff;
+    --confirm-color: #28a745;
+    --back-color: #ffffff;
+    --border-color: #ccc;
+    --font-color: black;
+    --transparent-color: rgb(15 116 143 / 70%);
+}
+/* End Variables */
+/* Start Header */
+nav ul {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    width: 50px;
+}
+
+
+.logo {
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+header h2 {
+    font-size: 20px;
+    color: var(--main-color);
+    font-family: 'Edu NSW ACT Cursive', Courier, monospace;
+    position: absolute;
+    left: 60px;
+    top: -6px;
+}
+header .search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+header .search input{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+header .search button {
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--back-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+header .create-team a {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--confirm-color);
+    color: var(--back-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+.search {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search input{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search button {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: var(--back-color);
+    font-size: 18px;
+    cursor: pointer;
+}
+header i {
+    margin-right: 10px;
+    color: var(--main-color);
+}
+/* End Header */
+/* create section */
+.section-body {
+    width: auto;
+    height: 700px;
+    background-color: var(--back-color);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner img {
+    width: auto;
+    height: 150px;
+    border-radius: 10px 10px 0 0;
+}
+.profile-image img{
+    background-color: var(--back-color);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid var(--back-color);
+}
+
+
+h2.label {
+    margin: 20px;
+    font-size: 40px;
+    color: var(--main-color);
+    font-family: 'Edu NSW ACT Cursive', Courier, monospace;
+    text-align: center;
+}
+
+
+
+
+
+
+.register-section {
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.register-container {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+.register-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--main-color);
+    font-family: 'Edu NSW ACT Cursive', Courier, monospace;
+    font-size: 50px;
+}
+
+
+
+.register-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.register-section form button {
+    margin: 40px 10px 10px 10px;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--confirm-color);
+    color: #fff;
+    cursor: pointer;
+}
+.register-section form input {
+    margin: 10px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: 0.3s;
+}
+.register-section form button:hover {
+    background-color: var(--secondary-color);
+}
+textarea,
+.register-section form input {
+    transition: 0.3s;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center ;
+}
+
+.members-count {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+.members-count input[type="range"] {
+    -webkit-appearance: none;
+    width: 250px;
+    height: 6px;
+    border-radius: 5px;
+    background: var(--back-color);
+    outline: none;
+    cursor: pointer;
+}
+
+.members-count input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+.members-count input[type="range"]::-moz-range-track {
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+/* Thumb */
+.members-count input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 5px solid var(--main-color);
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+}
+
+.members-count input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: white;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.public {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.public label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.public input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+.public input[type="radio"]:checked {
+    background-color: var(--main-color);
+}
+
+
+
+
+textarea:focus,
+.register-section form input:focus {
+    border-color: #0075ff;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 117, 255, 0.4);
+}
+
+.headline {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+textarea {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 80%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+
+
+
+.messages {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    box-shadow: 0 0 5px 0.1px gray;
+    border-radius: 10px;
+}
+.messages .users {
+    background-color: var(--back-color);
+    width: 250px;
+    height: 700px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;
+}
+.messages .users .user {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.messages .users .user i {
+    font-size: 24px;
+    color: var(--main-color);
+}
+.messages .users .user img {
+    background-color: var(--back-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.search-for {
+    background-color: var(--back-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.search-for .users {
+    padding: 0;
+    margin: 0;
+    background-color: var(--back-color);
+    width: 400px;
+    height:575px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0.1px gray;
+    overflow-y: scroll;
+}
+.search-for button {
+    margin-top: 0px !important;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 700px;
+    margin: 0 200px 0px 20px;
+}
+
+.members h3{
+    color: var(--font-color);
+    border: solid var(--main-color) 1px;
+    border-radius: 10px;
+    font-size: 20px;
+}

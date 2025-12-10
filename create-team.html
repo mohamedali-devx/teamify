@@ -1,9 +1,156 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>Teamify - create-team</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Teamify helps students form balanced teams for university projects.">
+        <meta name="keywords" content="Teamify, University, Teams, Projects, Students, Create">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Render All Elements Normally -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Font Awesome Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Main Template CSS File -->
+        <link rel="stylesheet" href="css/create-team.css">
+        <!-- Framework CSS File -->
+        <link rel="stylesheet" href="css/framework.css">
+        <!-- Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@603&family=Glass+Antiqua&family=Norican&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Start Header -->
+        <header>
+                <nav>
+                    <ul class="d-flex align-center">
+                        <li>
+                            <a href="home.html" class="logo ">
+                                <img src="media/images/logo5.png" alt="Teamify Logo">
+                                <h2>Teamfiy</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="home.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        <!-- End Header -->
+        <h2 class="label">Create a New Team</h2>
+        <!-- Start Creating Form -->
+        <div class="register-section">
+            <div>
+                <form action="" method="POST">
+                    <div class="section-body">
+                        <div class="banner">
+                            <img src="media/images/home-banner.jpg" alt="Teamify Banner">
+                        </div>
+                        <div class="profile-image">
+                            <img src="media/images/profile-placeholder.png" alt="Profile Placeholder">
+                        </div>
+                        <div class="info">
+                            <input type="text" name="teamname" placeholder="Team Name" required>
+                        </div>
+                        <div class="public">
+                            <label>
+                                <input type="radio" name="public" value="public" required>
+                                <span>Public</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="public" value="private">
+                                <span>Private</span>
+                            </label>
+                        </div>
+                        <div class="members-count">
+                            <input type="range" name="memberscount" min="1" max="10" value="1" step="1" oninput="this.nextElementSibling.value = this.value">
+                            <output>1</output> <p>Year</p>
+                        </div>
+                        <div class="headline">
+                            <label for="headline">Headline</label>
+                            <textarea name="headline" placeholder="Join our team for soft ware engineering subject."></textarea>
+                        </div>
+                        <button type="submit">Create Team</button>
+                    </div>
+                </form>
+            </div>
+            <section class="messages members">
+                <h3>Team Members</h3>
+                <div class="users">
+                        <div class="user">
+                            <img src="media/images/profile-placeholder.png" alt="User 1">
+                            <p>Tony</p>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                        <div class="user">
+                            <img src="media/images/profile-placeholder.png" alt="User 1">
+                            <p>Mostafa</p>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                        <div class="user">
+                            <img src="media/images/profile-placeholder.png" alt="User 1">
+                            <p>Shahd Mohamed</p>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                        <div class="user">
+                            <img src="media/images/profile-placeholder.png" alt="User 1">
+                            <p>Abu Rashad</p>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                        <div class="user">
+                            <img src="media/images/profile-placeholder.png" alt="User 1">
+                            <p>Ahmed Abdelhamed</p>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                        <div class="user">
+                            <img src="media/images/profile-placeholder.png" alt="User 1">
+                            <p>Mohamed Ali</p>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                    <div class="chat"></div>
+                </section>
+                <section class="messages search-for">
+                        <form id="teamSearchForm">
+                            <input type="text" id="searchInput" placeholder="Search By Name Or ID" required>
+                            <button type="submit">Search</button>
+                        </form>
+                        <div class="users">
+                            <div class="user">
+                                    <img src="media/images/profile-placeholder.png" alt="User 1">
+                                    <p>Youssef Mohamed</p>
+                                </div>
+                                <div class="user">
+                                    <img src="media/images/profile-placeholder.png" alt="User 1">
+                                    <p>Omar</p>
+                                </div>
+                                <div class="user">
+                                    <img src="media/images/profile-placeholder.png" alt="User 1">
+                                    <p>Mostafa</p>
+                                </div>
+                                <div class="user">
+                                    <img src="media/images/profile-placeholder.png" alt="User 1">
+                                    <p>mar3y</p>
+                                </div>
+                                <div class="user">
+                                    <img src="media/images/profile-placeholder.png" alt="User 1">
+                                    <p>Sheketa7</p>
+                                </div>
+                                <div class="user">
+                                    <img src="media/images/profile-placeholder.png" alt="User 1">
+                                    <p>Not Mohamed Ali</p>
+                                </div>
+                            </div>
+                            <div class="chat"></div>
+                        </section>
+                </div>
+        </div>
 
+
+        <!-- End Creating Form-->
     </body>
 </html>
